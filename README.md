@@ -1,4 +1,4 @@
-# Integratin Weekend Project 1 - Easybank landing page
+# Integration Weekend Project 1 - Easybank landing page
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 

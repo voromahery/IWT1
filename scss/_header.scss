@@ -1,4 +1,48 @@
-.masthead_title--link {
-    background-image: url("../images/logo.svg");
-    @include common-background-style;
+@import "./variable";
+
+.masthead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.masthead__title {
+  margin: 0;
+}
+
+.masthead__title--link {
+  background-image: url("#{$image-path}logo.svg");
+  width: 145px;
+}
+
+.menu {
+  background-image: url("#{$image-path}icon-hamburger.svg");
+  width: 24px;
+}
+
+.masthead__title--link,
+.menu {
+  @include common-background-style;
+  display: block;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.header {
+  overflow: hidden;
+}
+
+.header__image {
+  background-image: url("#{$image-path}bg-intro-mobile.svg");
+  background-size: contain;
+  background-position-x: center;
+  overflow: hidden;
+  transform: translateY(-29%);
+  background-position-y: 260%;
+  @include common-background-style;
+}
+
+.header__article {
+  text-align: center;
 }

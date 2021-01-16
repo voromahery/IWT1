@@ -5,6 +5,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-left: $padding-left-mobile;
+  padding-right: $padding-right-mobile;
 }
 
 .masthead__title {
@@ -37,7 +39,7 @@
 .header__image {
   background-image: url("#{$image-path}bg-intro-mobile.svg");
   background-size: cover;
-  background-position-y: 40%;
+  background-position-y: 50%;
   @include common-background-style;
 }
 
@@ -45,6 +47,10 @@
   text-align: center;
 }
 
+.header__article {
+  padding-left: $padding-left-mobile;
+  padding-right: $padding-right-mobile;
+}
 // .header__article--heading {
 //   color: $dark-blue;
 // }

@@ -15,7 +15,6 @@
 
 .masthead__title--link {
   background-image: url("#{$image-path}logo.svg");
-  width: 145px;
 }
 
 .menu {
@@ -23,7 +22,6 @@
   width: 24px;
 }
 
-.masthead__title--link,
 .menu {
   @include common-background-style;
   display: block;

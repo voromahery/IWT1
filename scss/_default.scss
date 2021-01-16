@@ -15,6 +15,10 @@ button {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   @include reset-list;
 }
@@ -50,4 +54,12 @@ button {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+.title {
+  @include common-background-style;
+  display: block;
+  background-position-y: center;
+  cursor: pointer;
+  width: 145px;
 }

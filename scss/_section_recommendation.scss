@@ -1,0 +1,10 @@
+@import "./variable";
+
+.section__recommendation {
+  background-color: $light-grayish-blue;
+  text-align: center;
+}
+
+.capability__icon {
+  max-width: 64px;
+}

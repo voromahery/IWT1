@@ -30,7 +30,7 @@
 }
 
 .header {
-  background-color: $Light-grayish-blue;
+  background-color: $very-light-gray;
   padding-bottom: 60px;
 }
 
@@ -45,9 +45,9 @@
   text-align: center;
 }
 
-.header__article--heading {
-  color: $dark-blue;
-}
+// .header__article--heading {
+//   color: $dark-blue;
+// }
 
 .header__article--heading,
 .header__article--paragraph {

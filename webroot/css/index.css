@@ -21,6 +21,9 @@ img {
 button {
   cursor: pointer; }
 
+.heading {
+  color: #2d314d; }
+
 .request-button {
   color: white;
   background: linear-gradient(90deg, #31d35c, #2bb7da);
@@ -60,7 +63,7 @@ button {
   cursor: pointer; }
 
 .header {
-  background-color: #f3f4f6;
+  background-color: #fafafa;
   padding-bottom: 60px; }
 
 .header__image {
@@ -73,9 +76,6 @@ button {
 .header__article {
   text-align: center; }
 
-.header__article--heading {
-  color: #2d314d; }
-
 .header__article--heading,
 .header__article--paragraph {
   font-weight: 300; }
@@ -87,3 +87,10 @@ button {
 
 .navigation__list {
   display: none; }
+
+.section__recommendation {
+  background-color: #f3f4f6;
+  text-align: center; }
+
+.capability__icon {
+  max-width: 64px; }

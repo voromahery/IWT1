@@ -1,8 +1,13 @@
 @import "./variable";
 
 body {
-  font-family: 'Public Sans';
   margin: auto;
+}
+
+body,
+a,
+button {
+  font-family: "Public Sans";
 }
 
 ul {
@@ -11,4 +16,27 @@ ul {
 
 img {
   width: 100%;
+}
+
+.paragraph {
+  color: $grayish-blue;
+  font-weight: $lighter;
+}
+
+button {
+  cursor: pointer;
+}
+
+.request-button {
+  color: $white;
+  background: linear-gradient(90deg, $lime-green, $bright-cyan);
+  border: none;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }

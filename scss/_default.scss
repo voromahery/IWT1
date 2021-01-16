@@ -4,10 +4,15 @@ body {
   margin: auto;
 }
 
+figure {
+  margin: 0;
+}
+
 body,
 a,
 button {
-  font-family: "Public Sans";
+  // font-family: "Public Sans";
+  font-family: sans-serif;
 }
 
 ul {
@@ -20,6 +25,7 @@ img {
 
 .paragraph {
   color: $grayish-blue;
+  line-height: 20px;
   font-weight: $lighter;
 }
 
@@ -29,6 +35,7 @@ button {
 
 .heading {
   color: $dark-blue;
+  font-weight: $regular;
 }
 
 .request-button {
@@ -44,9 +51,3 @@ button {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
-
-// header,
-// .section__recommendation {
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }

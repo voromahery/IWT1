@@ -1,0 +1,23 @@
+@import "./variable";
+
+.section__latest--article {
+  padding-left: $padding-left-mobile;
+  padding-right: $padding-right-mobile;
+  background-color: $very-light-gray;
+}
+
+.card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.latest__article--image {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.wrapper {
+  padding: 20px;
+}

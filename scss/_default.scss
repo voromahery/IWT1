@@ -1,0 +1,13 @@
+@import "./variable";
+
+body {
+  margin: auto;
+}
+
+ul {
+  @include reset-list;
+}
+
+img {
+  width: 100%;
+}

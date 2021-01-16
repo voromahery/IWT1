@@ -1,0 +1,15 @@
+// Mixin
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin common-background-style {
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+// Images and icons path

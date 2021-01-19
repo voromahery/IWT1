@@ -67,17 +67,6 @@ button {
 .masthead__title--link {
   background-image: url("../images/logo.svg"); }
 
-.menu {
-  background-image: url("../images/icon-hamburger.svg");
-  width: 24px; }
-
-.menu {
-  background-repeat: no-repeat;
-  text-indent: -9999px;
-  display: block;
-  background-position-y: center;
-  cursor: pointer; }
-
 .header {
   background-color: #fafafa;
   padding-bottom: 60px; }
@@ -101,8 +90,49 @@ button {
   margin-bottom: 20px;
   margin-top: 20px; }
 
-.navigation__list {
+.navigation {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  top: 9%;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.menu {
+  background-image: url("../images/icon-hamburger.svg");
+  width: 24px; }
+
+.menu,
+.toggle__menu:checked ~ .menu {
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  display: block;
+  background-position-y: center;
+  cursor: pointer; }
+
+.navigation__list--item {
+  margin-top: 12px;
+  margin-bottom: 12px; }
+
+.navigation__link {
+  color: #2d314d;
+  font-weight: bold; }
+
+.toggle__menu {
   display: none; }
+
+.nav_wrapper > .toggle__menu:checked ~ .navigation {
+  display: block; }
+
+.toggle__menu:checked ~ .menu {
+  background-image: url("../images/icon-close.svg"); }
 
 .section__recommendation {
   background-color: #f3f4f6;

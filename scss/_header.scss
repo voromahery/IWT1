@@ -17,18 +17,6 @@
   background-image: url("#{$image-path}logo.svg");
 }
 
-.menu {
-  background-image: url("#{$image-path}icon-hamburger.svg");
-  width: 24px;
-}
-
-.menu {
-  @include common-background-style;
-  display: block;
-  background-position-y: center;
-  cursor: pointer;
-}
-
 .header {
   background-color: $very-light-gray;
   padding-bottom: 60px;

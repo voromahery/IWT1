@@ -1,5 +1,54 @@
 @import "./variable";
 
-.navigation__list {
-    display: none;
+.navigation {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  top: 9%;
+  left: 0;
+  right: 0;
+//   padding-left: 50px;
+//   padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.menu {
+  background-image: url("#{$image-path}icon-hamburger.svg");
+  width: 24px;
+}
+
+.menu,
+.toggle__menu:checked ~ .menu {
+  @include common-background-style;
+  display: block;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.navigation__list--item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.navigation__link {
+  color: #2d314d;
+  font-weight: bold;
+}
+
+.toggle__menu {
+  display: none;
+}
+
+.nav_wrapper > .toggle__menu:checked ~ .navigation {
+  display: block;
+}
+
+.toggle__menu:checked ~ .menu {
+  background-image: url("#{$image-path}icon-close.svg");
 }

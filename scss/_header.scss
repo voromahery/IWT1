@@ -2,11 +2,10 @@
 
 .masthead {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  padding-left: $padding-left-mobile;
-  padding-right: $padding-right-mobile;
+  padding-left: calc($padding-left-mobile / 2);
+  padding-right: calc($padding-right-mobile / 2);
 }
 
 .masthead__title {
@@ -19,7 +18,7 @@
 
 .header {
   background-color: $very-light-gray;
-  padding-bottom: 60px;
+  padding-bottom: calc(60px / 2);
 }
 
 .header__image {
@@ -34,20 +33,35 @@
 }
 
 .header__article {
-  padding-left: $padding-left-mobile;
-  padding-right: $padding-right-mobile;
+  padding-left: calc($padding-left-mobile/2);
+  padding-right: calc($padding-right-mobile/2);
 }
-// .header__article--heading {
-//   color: $dark-blue;
-// }
-
-// .header__article--heading,
-// .header__article--paragraph {
-//   font-weight: $lighter;
-// }
 
 .header__article--paragraph {
   color: $grayish-blue;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: calc(20px / 2);
+  margin-top: calc(20px / 2);
+}
+
+@media (min-width: 300px) {
+  .masthead {
+    flex-direction: row;
+    align-items: center;
+    padding-left: $padding-left-mobile;
+    padding-right: $padding-right-mobile;
+  }
+
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .header__article {
+    padding-left: $padding-left-mobile;
+    padding-right: $padding-right-mobile;
+  }
+
+  .header__article--paragraph {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }

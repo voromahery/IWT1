@@ -3,21 +3,21 @@
 footer {
   text-align: center;
   background-color: $dark-blue;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  padding-left: $padding-left-mobile;
-  padding-right: $padding-right-mobile;
+  padding-top: calc(10px / 2);
+  padding-bottom: calc(40px / 2);
+  padding-left: calc($padding-left-mobile / 2);
+  padding-right: calc($padding-right-mobile / 2);
 }
 
 .footer__title {
   background-image: url("#{$image-path}logo-white.svg");
-  max-width: 145px;
   margin: auto;
 }
 
 .social__media--list {
   display: flex;
   place-content: center;
+  flex-wrap: wrap;
 }
 
 .social__media--link {
@@ -30,6 +30,8 @@ footer {
 .social__media--list-item {
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .facebook_icon {
@@ -53,13 +55,13 @@ footer {
 }
 
 .footer__nav--list {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: calc(30px / 2);
+  margin-bottom: calc(30px / 2);
 }
 
 .footer__list--item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: calc(20px / 2);
+  margin-bottom: calc(20px / 2);
 }
 
 .nav__link {
@@ -70,9 +72,46 @@ footer {
 }
 
 .footer_button {
-  margin-bottom: 20px;
+  margin-bottom: calc(20px / 2);
 }
 
 .copywrite {
   color: $grayish-blue;
+}
+
+@media (min-width: 300px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: $padding-left-mobile;
+    padding-right: $padding-right-mobile;
+  }
+
+  .social__media--list {
+    flex-wrap: nowrap;
+  }
+
+  .social__media--list-item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .footer__nav--list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer__list--item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav__link {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .footer_button {
+    margin-bottom: 20px;
+  }
 }

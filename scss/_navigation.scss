@@ -2,7 +2,11 @@
 
 .navigation {
   display: none;
-  background: linear-gradient(hsla(233, 26%, 24%, 0.5),hsla(233, 8%, 62%, 0.5), hsla(0, 0%, 100%, 0.5));
+  background: linear-gradient(
+    hsla(233, 26%, 24%, 0.5),
+    hsla(233, 8%, 62%, 0.5),
+    hsla(0, 0%, 100%, 0.5)
+  );
   position: fixed;
   top: 5.5%;
   left: 0;
@@ -59,4 +63,63 @@
 
 .toggle__menu:checked ~ .menu {
   background-image: url("#{$image-path}icon-close.svg");
+}
+
+@media (min-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    background: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    height: unset;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    top: unset;
+    background-color: #ffffff;
+    text-align: unset;
+    max-width: unset;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    opacity: unset;
+    width: 100%;
+  }
+
+  .menu {
+    background-image: unset;
+    width: unset;
+  }
+
+  .menu,
+  .toggle__menu:checked ~ .menu,
+  .toggle__menu,
+  .menu {
+    display: none;
+  }
+
+  .navigation__list--item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav_wrapper > .toggle__menu:checked ~ .navigation {
+    display: block;
+  }
+
+  .toggle__menu:checked ~ .menu {
+    background-image: url("#{$image-path}icon-close.svg");
+  }
 }

@@ -1,4 +1,20 @@
+@font-face {
+  font-family: "myFont";
+  src: url("../fonts/PublicSans-Light.woff2"), url("../fonts/PublicSans-Light.woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "myFont";
+  src: url("../fonts/PublicSans-Regular.woff2"), url("../fonts/PublicSans-Regular.woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "myFont";
+  src: url("../fonts/PublicSans-Bold.woff2"), url("../fonts/PublicSans-Bold.woff");
+  font-weight: 700; }
+
 body {
+  max-width: 1440px;
   margin: auto; }
 
 figure {
@@ -7,7 +23,7 @@ figure {
 body,
 a,
 button {
-  font-family: sans-serif; }
+  font-family: "myFont", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -64,12 +80,25 @@ button {
   .title {
     width: 145px; } }
 
+@media (min-width: 800px) {
+  .paragraph {
+    font-size: 18px;
+    line-height: 30px; }
+  .request-button {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px; } }
+
 .masthead {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: calc($padding-left-mobile / 2);
   padding-right: calc($padding-right-mobile / 2); }
+
+.masthead__article--button {
+  display: none; }
 
 .masthead__title {
   margin: 0; }
@@ -115,9 +144,29 @@ button {
     margin-bottom: 20px;
     margin-top: 20px; } }
 
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 100px; }
+  .masthead__article--button {
+    display: block; }
+  .header__article--heading {
+    font-size: 64px; }
+  .header__article {
+    text-align: unset;
+    align-self: center;
+    padding-left: unset;
+    padding-right: unset; }
+  .header__article,
+  .header__picture {
+    flex-basis: 50%; }
+  .header__image {
+    background-image: url("../images/bg-intro-desktop.svg"); } }
+
 .navigation {
   display: none;
-  background: linear-gradient(#2d314d, #9698a6, white);
+  background: linear-gradient(rgba(45, 49, 77, 0.5), rgba(150, 152, 166, 0.5), rgba(255, 255, 255, 0.5));
   position: fixed;
   top: 5.5%;
   left: 0;
@@ -175,6 +224,9 @@ button {
   text-align: center;
   padding-left: calc($padding-left-mobile / 2);
   padding-right: calc($padding-right-mobile / 2); }
+
+.section__recommendation--title {
+  display: none; }
 
 .capability__icon {
   max-width: calc(70px / 2); }

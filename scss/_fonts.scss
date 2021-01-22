@@ -1,0 +1,22 @@
+@import "./variable";
+
+@font-face {
+  font-family: "myFont";
+  src: url("#{$font-path}PublicSans-Light.woff2"),
+    url("#{$font-path}PublicSans-Light.woff");
+  font-weight: $lighter;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("#{$font-path}PublicSans-Regular.woff2"),
+    url("#{$font-path}PublicSans-Regular.woff");
+  font-weight: $regular;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("#{$font-path}PublicSans-Bold.woff2"),
+    url("#{$font-path}PublicSans-Bold.woff");
+  font-weight: $bold;
+}

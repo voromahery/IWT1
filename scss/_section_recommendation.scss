@@ -9,6 +9,10 @@
   padding-right: calc($padding-right-mobile / 2);
 }
 
+.section__recommendation--title {
+  display: none;
+}
+
 .capability__icon {
   max-width: calc(70px / 2);
 }

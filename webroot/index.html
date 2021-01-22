@@ -40,16 +40,23 @@
             </li>
           </ul>
         </nav>
+        <button class="masthead__article--button request-button">
+          Request Invite
+        </button>
       </div>
     </header>
     <main>
       <header class="header">
         <picture class="header__picture">
-          <img
-            src="./images/image-mockups-mobile.png"
-            class="header__image"
-            alt="three-phones"
+          <source
+            srcset="./images/image-mockups-desktop.png"
+            media="(min-width: 800px)"
           />
+          <img
+          src="./images/image-mockups-mobile.png"
+          class="header__image"
+          alt="three-phones"
+        />
         </picture>
         <article class="header__article">
           <h2 class="heading header__article--heading">
@@ -66,6 +73,7 @@
         </article>
       </header>
       <section class="section__recommendation">
+        <h2 class="section__recommendation--title"></h2>
         <article class="recommendation__article">
           <h2 class="heading recommendation__article--heading">
             Why choose Easybank?

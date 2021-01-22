@@ -8,6 +8,10 @@
   padding-right: calc($padding-right-mobile / 2);
 }
 
+.masthead__article--button {
+  display: none;
+}
+
 .masthead__title {
   margin: 0;
 }
@@ -63,5 +67,37 @@
   .header__article--paragraph {
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: $padding-left-desktop;
+  }
+
+  .masthead__article--button {
+    display: block;
+  }
+
+  .header__article--heading {
+    font-size: 64px;
+  }
+
+  .header__article {
+    text-align: unset;
+    align-self: center;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .header__article,
+  .header__picture {
+    flex-basis: 50%;
+  }
+
+  .header__image {
+    background-image: url("#{$image-path}bg-intro-desktop.svg");
   }
 }

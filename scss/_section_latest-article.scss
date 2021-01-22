@@ -62,3 +62,11 @@
     font-size: 12px;
   }
 }
+
+@media (min-width: 800px) {
+  .latest__article--wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}

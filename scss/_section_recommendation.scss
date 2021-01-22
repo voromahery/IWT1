@@ -39,3 +39,23 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: 800px) {
+  .section__recommendation {
+    text-align: unset;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: $padding-left-desktop;
+    padding-right: $padding-right-desktop;
+  }
+
+  .recommendation__article--heading {
+    font-size: 32px;
+  }
+
+  .capability__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}

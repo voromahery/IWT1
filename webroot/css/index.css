@@ -302,6 +302,20 @@ button {
     margin-top: 40px;
     margin-bottom: 40px; } }
 
+@media (min-width: 800px) {
+  .section__recommendation {
+    text-align: unset;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px; }
+  .recommendation__article--heading {
+    font-size: 32px; }
+  .capability__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; } }
+
 .section__latest--article {
   padding-left: calc($padding-left-mobile/2);
   padding-right: calc($padding-right-mobile/2);
@@ -349,6 +363,12 @@ button {
     padding-bottom: 30px; }
   .article__image--caption {
     font-size: 12px; } }
+
+@media (min-width: 800px) {
+  .latest__article--wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; } }
 
 footer {
   text-align: center;

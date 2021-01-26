@@ -47,30 +47,32 @@
     </header>
     <main>
       <header class="header">
-        <picture class="header__picture">
-          <source
-            srcset="./images/image-mockups-desktop.png"
-            media="(min-width: 800px)"
-          />
-          <img
-            src="./images/image-mockups-mobile.png"
-            class="header__image"
-            alt="three-phones"
-          />
-        </picture>
-        <article class="header__article">
-          <h2 class="heading header__article--heading">
-            Next generation digital banking
-          </h2>
-          <p class="paragraph header__article--paragraph">
-            Next generation digital banking Take your financial life online.
-            Your Easybank account will be a one-stop-shop for spending, saving,
-            budgeting, investing, and much more.
-          </p>
-          <button class="header__article--button request-button">
-            Request Invite
-          </button>
-        </article>
+        <div class="image__wrapper">
+          <picture class="header__picture">
+            <source
+              srcset="./images/image-mockups-desktop.png"
+              media="(min-width: 800px)"
+            />
+            <img
+              src="./images/image-mockups-mobile.png"
+              class="header__image"
+              alt="three-phones"
+            />
+          </picture>
+          <article class="header__article">
+            <h2 class="heading header__article--heading">
+              Next generation digital banking
+            </h2>
+            <p class="paragraph header__article--paragraph">
+              Next generation digital banking Take your financial life online.
+              Your Easybank account will be a one-stop-shop for spending,
+              saving, budgeting, investing, and much more.
+            </p>
+            <button class="header__article--button request-button">
+              Request Invite
+            </button>
+          </article>
+        </div>
       </header>
       <section class="section__recommendation">
         <h2 class="section__recommendation--title"></h2>
@@ -214,56 +216,64 @@
       </section>
     </main>
     <footer>
-      <h1><a href="" class="title footer__title">Easybank</a></h1>
-      <ul class="social__media--list">
-        <li class="social__media--list-item">
-          <a href="/facebook.com" class="social__media--link facebook_icon"
-            >Facebook</a
-          >
-        </li>
-        <li class="social__media--list-item">
-          <a href="youtube.com" class="social__media--link youtube_icon"
-            >Youtube</a
-          >
-        </li>
-        <li class="social__media--list-item">
-          <a href="twitter.com" class="social__media--link twitter_icon"
-            >Twitter</a
-          >
-        </li>
-        <li class="social__media--list-item">
-          <a href="pinterest.com" class="social__media--link pinterest_icon"
-            >Pinterest</a
-          >
-        </li>
-        <li class="social__media--list-item">
-          <a href="instagram.com" class="social__media--link instagram_icon"
-            >Instagram</a
-          >
-        </li>
-      </ul>
-      <ul class="footer__nav--list">
-        <li class="footer__list--item">
-          <a href="" class="nav__link">About Us</a>
-        </li>
-        <li class="footer__list--item">
-          <a href="" class="nav__link">Contact </a>
-        </li>
-        <li class="footer__list--item">
-          <a href="" class="nav__link">Blog</a>
-        </li>
-        <li class="footer__list--item">
-          <a href="" class="nav__link">Careers</a>
-        </li>
-        <li class="footer__list--item">
-          <a href="" class="nav__link">Support</a>
-        </li>
-        <li class="footer__list--item">
-          <a href="" class="nav__link">Privacy Policy</a>
-        </li>
-      </ul>
-      <button class="request-button footer_button">Request Invite</button>
-      <p class="copywrite">Request Invite © Easybank. All Rights Reserved</p>
+      <div class="footer__section--one">
+        <h1><a href="" class="title footer__title">Easybank</a></h1>
+        <ul class="social__media--list">
+          <li class="social__media--list-item">
+            <a href="/facebook.com" class="social__media--link facebook_icon"
+              >Facebook</a
+            >
+          </li>
+          <li class="social__media--list-item">
+            <a href="youtube.com" class="social__media--link youtube_icon"
+              >Youtube</a
+            >
+          </li>
+          <li class="social__media--list-item">
+            <a href="twitter.com" class="social__media--link twitter_icon"
+              >Twitter</a
+            >
+          </li>
+          <li class="social__media--list-item">
+            <a href="pinterest.com" class="social__media--link pinterest_icon"
+              >Pinterest</a
+            >
+          </li>
+          <li class="social__media--list-item">
+            <a href="instagram.com" class="social__media--link instagram_icon"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section--two">
+        <ul class="footer__nav--list">
+          <li class="footer__list--item">
+            <a href="" class="nav__link">About Us</a>
+          </li>
+          <li class="footer__list--item">
+            <a href="" class="nav__link">Contact </a>
+          </li>
+          <li class="footer__list--item">
+            <a href="" class="nav__link">Blog</a>
+          </li>
+        </ul>
+        <ul class="a11y__list">
+          <li class="a11y__list--item">
+            <a href="" class="a11y__link">Careers</a>
+          </li>
+          <li class="a11y__list--item">
+            <a href="" class="a11y__link">Support</a>
+          </li>
+          <li class="a11y__list--item">
+            <a href="" class="a11y__link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section--three">
+        <button class="request-button footer_button">Request Invite</button>
+        <p class="copywrite">© Easybank. All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>

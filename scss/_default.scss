@@ -39,7 +39,7 @@ button {
 
 .heading {
   color: $dark-blue;
-  font-weight: $regular;
+  font-weight: $bold;
 }
 
 .request-button {
@@ -66,7 +66,7 @@ button {
   max-width: 100%;
 }
 
-@media (min-width: 300px) {
+@media (min-width: $mobile) {
   .request-button {
     padding-left: 18px;
     padding-right: 18px;
@@ -79,10 +79,10 @@ button {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $desktop) {
   .paragraph {
     font-size: 18px;
-    line-height: 30px;
+    line-height:25px;
   }
 
   .request-button {

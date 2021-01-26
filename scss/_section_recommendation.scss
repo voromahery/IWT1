@@ -22,7 +22,7 @@
   margin-bottom: calc(40px / 2);
 }
 
-@media (min-width: 300px) {
+@media (min-width: $mobile) {
   .section__recommendation {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -40,13 +40,25 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $tablet) {
+  .capability__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
   .section__recommendation {
     text-align: unset;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: $padding-left-desktop;
     padding-right: $padding-right-desktop;
+  }
+
+  .recommendation__article {
+    max-width: 60%;
   }
 
   .recommendation__article--heading {

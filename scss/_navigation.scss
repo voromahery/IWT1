@@ -65,7 +65,7 @@
   background-image: url("#{$image-path}icon-close.svg");
 }
 
-@media (min-width: 800px) {
+@media (min-width: $desktop) {
   .navigation {
     display: flex;
     flex-direction: row;

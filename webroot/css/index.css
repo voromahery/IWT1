@@ -494,19 +494,19 @@ footer {
   background-image: url("../images/icon-instagram.svg"); }
 
 .facebook_icon:hover {
-  background-image: url("../images/icon-facebook-hover.svg"); }
+  background-image: url("../images/icon-facebook-hover.svg"), url("../images/icon-facebook.svg"); }
 
 .youtube_icon:hover {
-  background-image: url("../images/icon-youtube-hover.svg"); }
+  background-image: url("../images/icon-youtube-hover.svg"), url("../images/icon-youtube.svg"); }
 
 .twitter_icon:hover {
-  background-image: url("../images/icon-twitter-hover.svg"); }
+  background-image: url("../images/icon-twitter-hover.svg"), url("../images/icon-twitter.svg"); }
 
 .pinterest_icon:hover {
-  background-image: url("../images/icon-pinterest-hover.svg"); }
+  background-image: url("../images/icon-pinterest-hover.svg"), url("../images/icon-pinterest.svg"); }
 
 .instagram_icon:hover {
-  background-image: url("../images/icon-instagram-hover.svg"); }
+  background-image: url("../images/icon-instagram-hover.svg"), url("../images/icon-instagram.svg"); }
 
 .footer__section--two {
   margin-top: calc(30px / 2);

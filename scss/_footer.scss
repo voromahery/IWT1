@@ -61,23 +61,28 @@ footer {
 
 // Hovered styles
 .facebook_icon:hover {
-  background-image: url("#{$image-path}icon-facebook-hover.svg");
+  background-image: url("#{$image-path}icon-facebook-hover.svg"),
+    url("#{$image-path}icon-facebook.svg");
 }
 
 .youtube_icon:hover {
-  background-image: url("#{$image-path}icon-youtube-hover.svg");
+  background-image: url("#{$image-path}icon-youtube-hover.svg"),
+    url("#{$image-path}icon-youtube.svg");
 }
 
 .twitter_icon:hover {
-  background-image: url("#{$image-path}icon-twitter-hover.svg");
+  background-image: url("#{$image-path}icon-twitter-hover.svg"),
+    url("#{$image-path}icon-twitter.svg");
 }
 
 .pinterest_icon:hover {
-  background-image: url("#{$image-path}icon-pinterest-hover.svg");
+  background-image: url("#{$image-path}icon-pinterest-hover.svg"),
+    url("#{$image-path}icon-pinterest.svg");
 }
 
 .instagram_icon:hover {
-  background-image: url("#{$image-path}icon-instagram-hover.svg");
+  background-image: url("#{$image-path}icon-instagram-hover.svg"),
+    url("#{$image-path}icon-instagram.svg");
 }
 
 .footer__section--two {

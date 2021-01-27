@@ -119,12 +119,13 @@ footer {
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet) {
   footer {
     padding-left: $padding-left-desktop;
     padding-right: $padding-right-desktop;
     padding-top: 60px;
     padding-bottom: 60px;
+    flex-wrap: wrap;
   }
 
   footer h1 {
@@ -150,6 +151,33 @@ footer {
     line-height: 34px;
   }
 
+  .footer__title {
+    margin: 0;
+  }
+
+  .social__media--list {
+    justify-content: unset;
+  }
+
+  .footer__section--one {
+    flex-basis: 50%;
+  }
+
+  .footer__section--two {
+    flex-basis: 50%;
+  }
+
+  .footer__section--three {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  footer {
+    flex-wrap: nowrap;
+  }
+
   .footer__section--two,
   footer h1 {
     margin-top: 0;
@@ -168,13 +196,5 @@ footer {
     flex-basis: 30%;
     margin-bottom: 0;
     gap: 20px;
-  }
-
-  .footer__title {
-    margin: 0;
-  }
-
-  .social__media--list {
-    justify-content: unset;
   }
 }

@@ -42,6 +42,28 @@ button {
   font-weight: $bold;
 }
 
+@keyframes move {
+  0% {
+    background: linear-gradient(36deg, $lime-green, $bright-cyan);
+  }
+
+  50% {
+      background: linear-gradient(360deg, $lime-green, $bright-cyan);
+  }
+
+  100% {
+    background: linear-gradient(0deg, $lime-green, $bright-cyan);
+  }
+}
+
+.request-button:hover {
+  animation: move 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  transition: all ease-in 1.5s;
+}
+
 .request-button {
   color: $white;
   background: linear-gradient(90deg, $lime-green, $bright-cyan);
@@ -82,7 +104,7 @@ button {
 @media (min-width: $desktop) {
   .paragraph {
     font-size: 18px;
-    line-height:25px;
+    line-height: 25px;
   }
 
   .request-button {

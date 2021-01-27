@@ -13,6 +13,10 @@
   display: none;
 }
 
+.capability {
+  font-weight: $bold;
+}
+
 .capability__icon {
   max-width: calc(70px / 2);
 }

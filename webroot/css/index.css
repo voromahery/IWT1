@@ -46,7 +46,7 @@ button {
 
 .heading {
   color: #2d314d;
-  font-weight: 700; }
+  font-weight: 400; }
 
 @keyframes move {
   0% {
@@ -55,13 +55,6 @@ button {
     background: linear-gradient(360deg, #31d35c, #2bb7da); }
   100% {
     background: linear-gradient(0deg, #31d35c, #2bb7da); } }
-
-.request-button:hover {
-  animation: move 1.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  transition: all ease-in 1.5s; }
 
 .request-button {
   color: white;
@@ -74,7 +67,13 @@ button {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px; }
+  border-bottom-right-radius: 50px;
+  transition: all ease-in 0.2s; }
+
+.request-button:hover {
+  background: linear-gradient(90deg, #31d35c, #2bb7da);
+  opacity: 0.5;
+  transition: all ease-in 0.2s; }
 
 .title {
   background-repeat: no-repeat;
@@ -197,7 +196,7 @@ button {
     width: 100%; }
   .header {
     background-image: url("../images/bg-intro-desktop.svg");
-    background-position: calc(50vw - 11px) 100%;
+    background-position: calc(50vw - 11px) calc(100% - 35px);
     background-repeat: no-repeat;
     padding-left: 100px;
     padding-bottom: 0; } }
@@ -292,9 +291,16 @@ button {
     display: none; }
   .navigation__list--item {
     margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: calc(20px + 3px);
+    margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px; }
+  .navigation__list--item:hover {
+    border-bottom: 3px solid #31d35c;
+    padding-bottom: 20px; }
+  .navigation__list--item:hover,
+  .navigation__list--item {
+    transition: border linear 0.2s; }
   .nav_wrapper > .toggle__menu:checked ~ .navigation {
     display: block; }
   .toggle__menu:checked ~ .menu {
@@ -310,6 +316,9 @@ button {
 
 .section__recommendation--title {
   display: none; }
+
+.capability {
+  font-weight: 700; }
 
 .capability__icon {
   max-width: calc(70px / 2); }
@@ -359,6 +368,16 @@ button {
   padding-bottom: calc(60px / 2);
   background-color: #fafafa; }
 
+.latest__article--link {
+  color: #2d314d; }
+
+.latest__article--link:hover {
+  color: #31d35c; }
+
+.latest__article--link,
+.latest__article--link:hover {
+  transition: color linear 0.2s; }
+
 .card {
   border-radius: calc(12px / 2);
   background-color: #ffffff;
@@ -375,7 +394,8 @@ button {
   padding-top: calc(20px / 2);
   padding-bottom: calc(30px / 2); }
 
-.article__image--caption {
+.article__image--caption,
+.photographer {
   font-size: calc(12px - 4px);
   color: #9698a6; }
 
@@ -397,7 +417,8 @@ button {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 30px; }
-  .article__image--caption {
+  .article__image--caption,
+  .photographer {
     font-size: 12px; } }
 
 @media (min-width: 600px) {
@@ -441,6 +462,10 @@ footer {
   width: 23px;
   height: 23px; }
 
+.social__media--link,
+.social__media--link:hover {
+  transition: all linear 0.2s; }
+
 .social__media--list-item {
   margin-left: 5px;
   margin-right: 5px;
@@ -462,6 +487,21 @@ footer {
 .instagram_icon {
   background-image: url("../images/icon-instagram.svg"); }
 
+.facebook_icon:hover {
+  background-image: url("../images/icon-facebook-hover.svg"); }
+
+.youtube_icon:hover {
+  background-image: url("../images/icon-youtube-hover.svg"); }
+
+.twitter_icon:hover {
+  background-image: url("../images/icon-twitter-hover.svg"); }
+
+.pinterest_icon:hover {
+  background-image: url("../images/icon-pinterest-hover.svg"); }
+
+.instagram_icon:hover {
+  background-image: url("../images/icon-instagram-hover.svg"); }
+
 .footer__section--two {
   margin-top: calc(30px / 2);
   margin-bottom: calc(30px / 2); }
@@ -477,6 +517,16 @@ footer {
   line-height: 20px;
   margin-top: 5px;
   margin-bottom: 5px; }
+
+.nav__link:hover,
+.a11y__link:hover {
+  color: #31d35c; }
+
+.nav__link,
+.a11y__link,
+.nav__link:hover,
+.a11y__link:hover {
+  transition: color linear 0.2s; }
 
 .footer_button {
   margin-bottom: calc(20px / 2); }
@@ -529,7 +579,7 @@ footer {
   .a11y__list--item {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 34px; }
+    line-height: 27px; }
   .footer__title {
     margin: 0; }
   .social__media--list {
@@ -556,4 +606,7 @@ footer {
   .footer__section--two {
     flex-basis: 30%;
     margin-bottom: 0;
-    gap: 20px; } }
+    gap: 20px; }
+  .footer__list--item,
+  .a11y__list--item {
+    line-height: 34px; } }

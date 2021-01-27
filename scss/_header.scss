@@ -109,11 +109,6 @@
     max-width: 584px;
   }
 
-  // .header__article,
-  // .header__picture {
-  //   flex-basis: 50%;
-  // }
-
   .header__image {
     background-image: none;
     max-width: 100%;
@@ -131,10 +126,9 @@
 
   .header {
     background-image: url("#{$image-path}bg-intro-desktop.svg");
-    background-position: calc(50vw - 11px) 100%;
+    background-position: calc(50vw - 11px) calc(100% - 35px);
     background-repeat: no-repeat;
     padding-left: 100px;
-    // padding-right: 100px;
     padding-bottom: 0;
   }
 }

@@ -8,6 +8,19 @@
   background-color: $very-light-gray;
 }
 
+.latest__article--link {
+  color: $dark-blue;
+}
+
+.latest__article--link:hover {
+  color: $lime-green;
+}
+
+.latest__article--link,
+.latest__article--link:hover {
+  transition: color linear 0.2s;
+}
+
 .card {
   border-radius: calc(12px / 2);
   background-color: #ffffff;
@@ -27,7 +40,8 @@
   padding-bottom: calc(30px / 2);
 }
 
-.article__image--caption {
+.article__image--caption,
+.photographer {
   font-size: calc(12px - 4px);
   color: $grayish-blue;
 }
@@ -58,7 +72,8 @@
     padding-bottom: 30px;
   }
 
-  .article__image--caption {
+  .article__image--caption,
+  .photographer {
     font-size: 12px;
   }
 }

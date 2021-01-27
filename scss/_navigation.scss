@@ -110,9 +110,20 @@
 
   .navigation__list--item {
     margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: calc(20px + 3px);
+    margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .navigation__list--item:hover {
+    border-bottom: 3px solid $lime-green;
+    padding-bottom: 20px;
+  }
+
+  .navigation__list--item:hover,
+  .navigation__list--item {
+    transition: border linear 0.2s;
   }
 
   .nav_wrapper > .toggle__menu:checked ~ .navigation {

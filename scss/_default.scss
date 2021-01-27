@@ -39,7 +39,7 @@ button {
 
 .heading {
   color: $dark-blue;
-  font-weight: $bold;
+  font-weight: $regular;
 }
 
 @keyframes move {
@@ -56,14 +56,6 @@ button {
   }
 }
 
-.request-button:hover {
-  animation: move 1.5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  transition: all ease-in 1.5s;
-}
-
 .request-button {
   color: $white;
   background: linear-gradient(90deg, $lime-green, $bright-cyan);
@@ -76,6 +68,13 @@ button {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  transition: all ease-in 0.2s;
+}
+
+.request-button:hover {
+  background: linear-gradient(90deg, $lime-green, $bright-cyan);
+  opacity: 0.5;
+  transition: all ease-in 0.2s;
 }
 
 .title {

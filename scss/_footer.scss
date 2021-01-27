@@ -27,6 +27,11 @@ footer {
   height: 23px;
 }
 
+.social__media--link,
+.social__media--link:hover {
+  transition: all linear 0.2s;
+}
+
 .social__media--list-item {
   margin-left: 5px;
   margin-right: 5px;
@@ -54,6 +59,27 @@ footer {
   background-image: url("#{$image-path}icon-instagram.svg");
 }
 
+// Hovered styles
+.facebook_icon:hover {
+  background-image: url("#{$image-path}icon-facebook-hover.svg");
+}
+
+.youtube_icon:hover {
+  background-image: url("#{$image-path}icon-youtube-hover.svg");
+}
+
+.twitter_icon:hover {
+  background-image: url("#{$image-path}icon-twitter-hover.svg");
+}
+
+.pinterest_icon:hover {
+  background-image: url("#{$image-path}icon-pinterest-hover.svg");
+}
+
+.instagram_icon:hover {
+  background-image: url("#{$image-path}icon-instagram-hover.svg");
+}
+
 .footer__section--two {
   margin-top: calc(30px / 2);
   margin-bottom: calc(30px / 2);
@@ -71,6 +97,18 @@ footer {
   line-height: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.nav__link:hover,
+.a11y__link:hover {
+  color: $lime-green;
+}
+
+.nav__link,
+.a11y__link,
+.nav__link:hover,
+.a11y__link:hover {
+  transition: color linear 0.2s;
 }
 
 .footer_button {
@@ -148,7 +186,7 @@ footer {
   .a11y__list--item {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 34px;
+    line-height: 27px;
   }
 
   .footer__title {
@@ -196,5 +234,10 @@ footer {
     flex-basis: 30%;
     margin-bottom: 0;
     gap: 20px;
+  }
+
+  .footer__list--item,
+  .a11y__list--item {
+    line-height: 34px;
   }
 }

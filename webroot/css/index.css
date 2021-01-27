@@ -243,7 +243,7 @@ button {
 
 .navigation__link {
   color: #2d314d;
-  font-weight: bold; }
+  font-weight: 400; }
 
 .toggle__menu {
   display: none; }
@@ -295,9 +295,15 @@ button {
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: 10px; }
+  .navigation__link {
+    color: #9698a6; }
+  .navigation__link:hover {
+    color: #2d314d; }
   .navigation__list--item:hover {
     border-bottom: 3px solid #31d35c;
     padding-bottom: 20px; }
+  .navigation__link:hover,
+  .navigation__link,
   .navigation__list--item:hover,
   .navigation__list--item {
     transition: border linear 0.2s; }

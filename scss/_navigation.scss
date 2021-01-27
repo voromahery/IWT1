@@ -50,7 +50,7 @@
 
 .navigation__link {
   color: #2d314d;
-  font-weight: bold;
+  font-weight: $regular;
 }
 
 .toggle__menu {
@@ -116,11 +116,21 @@
     margin-right: 10px;
   }
 
+  .navigation__link {
+    color: $grayish-blue;
+  }
+
+  .navigation__link:hover {
+    color: #2d314d;
+  }
+
   .navigation__list--item:hover {
     border-bottom: 3px solid $lime-green;
     padding-bottom: 20px;
   }
 
+  .navigation__link:hover,
+  .navigation__link,
   .navigation__list--item:hover,
   .navigation__list--item {
     transition: border linear 0.2s;

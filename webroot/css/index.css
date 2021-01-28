@@ -96,7 +96,6 @@ button {
 
 @media (min-width: 1100px) {
   .paragraph {
-    font-size: 18px;
     line-height: 25px; }
   .request-button {
     padding-left: 24px;
@@ -178,7 +177,7 @@ button {
     flex-basis: 40%;
     width: 100%; }
   .header__article--heading {
-    font-size: 64px; }
+    font-size: 60px; }
   .header__article {
     text-align: unset;
     align-self: center;

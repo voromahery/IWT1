@@ -63,6 +63,9 @@
 
 .toggle__menu:checked ~ .menu {
   background-image: url("#{$image-path}icon-close.svg");
+  position: fixed;
+  top: 10px;
+  right: 20px;
 }
 
 @media (min-width: $tablet) {

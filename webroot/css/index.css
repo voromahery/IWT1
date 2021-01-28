@@ -165,7 +165,9 @@ button {
   .header {
     display: flex;
     flex-direction: row-reverse;
-    padding-left: 100px; }
+    padding-left: 100px;
+    padding-bottom: 0;
+    max-height: 650px; }
   .masthead__title--link,
   .masthead__article--button {
     flex-basis: 30%; }
@@ -182,23 +184,28 @@ button {
     align-self: center;
     padding-left: unset;
     padding-right: unset;
-    max-width: 584px; }
-  .header__image {
+    max-width: 584px;
+    flex-basis: 40%; }
+  .header__picture {
     background-image: none;
     max-width: 100%;
     width: 100%;
-    max-height: 100%;
-    height: 100%; }
+    flex-basis: 60%; }
+  .header__image {
+    background-image: none;
+    max-width: max-content;
+    float: right;
+    clear: both; }
   .image__wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%; }
-  .header {
-    background-image: url("../images/bg-intro-desktop.svg");
-    background-position: calc(50vw - 11px) calc(100% - 35px);
+  .header__picture {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-position: 0 calc(650px - calc(958px - 50px));
     background-repeat: no-repeat;
-    padding-left: 100px;
+    padding-left: 0;
     padding-bottom: 0; } }
 
 .navigation {
@@ -252,7 +259,10 @@ button {
   display: block; }
 
 .toggle__menu:checked ~ .menu {
-  background-image: url("../images/icon-close.svg"); }
+  background-image: url("../images/icon-close.svg");
+  position: fixed;
+  top: 10px;
+  right: 20px; }
 
 @media (min-width: 600px) {
   .navigation {

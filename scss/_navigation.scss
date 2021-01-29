@@ -30,6 +30,15 @@
   opacity: 1;
 }
 
+.navigation__link:hover {
+  color: $lime-green;
+}
+
+.navigation__link:hover,
+.navigation__link {
+  transition: color linear 0.2s;
+}
+
 .menu {
   background-image: url("#{$image-path}icon-hamburger.svg");
   width: 24px;

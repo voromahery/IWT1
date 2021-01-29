@@ -231,6 +231,13 @@ button {
   border-bottom-right-radius: 8px;
   opacity: 1; }
 
+.navigation__link:hover {
+  color: #31d35c; }
+
+.navigation__link:hover,
+.navigation__link {
+  transition: color linear 0.2s; }
+
 .menu {
   background-image: url("../images/icon-hamburger.svg");
   width: 24px; }

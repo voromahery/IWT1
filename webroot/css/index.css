@@ -112,6 +112,20 @@ button {
   padding-left: calc($padding-left-mobile / 2);
   padding-right: calc($padding-right-mobile / 2); }
 
+.masthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: calc($padding-left-mobile / 2);
+  padding-right: calc($padding-right-mobile / 2);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  height: 37px;
+  z-index: 2;
+  box-shadow: 0px 0.1px 3px #9698a6; }
+
 .masthead__article--button {
   display: none; }
 
@@ -158,6 +172,13 @@ button {
   .header__article--paragraph {
     margin-bottom: 20px;
     margin-top: 20px; } }
+
+@media (min-width: 600px) {
+  .masthead {
+    position: unset;
+    width: unset;
+    height: unset;
+    z-index: unset; } }
 
 @media (min-width: 1100px) {
   .masthead {

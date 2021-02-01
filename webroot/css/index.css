@@ -48,6 +48,9 @@ button {
   color: #2d314d;
   font-weight: 400; }
 
+main {
+  padding-top: 37px; }
+
 @keyframes move {
   0% {
     background: linear-gradient(36deg, #31d35c, #2bb7da); }
@@ -96,6 +99,10 @@ button {
   .title {
     width: 145px; } }
 
+@media (min-width: 600px) {
+  main {
+    padding-top: 0; } }
+
 @media (min-width: 1100px) {
   .paragraph {
     line-height: 25px; }
@@ -104,13 +111,6 @@ button {
     padding-right: 24px;
     padding-top: 12px;
     padding-bottom: 12px; } }
-
-.masthead {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: calc($padding-left-mobile / 2);
-  padding-right: calc($padding-right-mobile / 2); }
 
 .masthead {
   display: flex;

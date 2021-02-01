@@ -42,6 +42,10 @@ button {
   font-weight: $regular;
 }
 
+main {
+  padding-top: 37px;
+}
+
 @keyframes move {
   0% {
     background: linear-gradient(36deg, $lime-green, $bright-cyan);
@@ -104,6 +108,12 @@ button {
 
   .title {
     width: 145px;
+  }
+}
+
+@media (min-width: $tablet) {
+  main {
+    padding-top: 0;
   }
 }
 

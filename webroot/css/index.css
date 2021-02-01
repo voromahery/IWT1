@@ -67,12 +67,14 @@ button {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transition: all ease-in 0.2s; }
+  border-bottom-right-radius: 50px; }
 
 .request-button:hover {
-  background: linear-gradient(90deg, #31d35c, #2bb7da);
-  opacity: 0.5;
+  background: linear-gradient(90deg, rgba(49, 211, 92, 0.6), rgba(43, 183, 218, 0.6));
+  background-color: white; }
+
+.request-button,
+.request-button:hover {
   transition: all ease-in 0.2s; }
 
 .title {

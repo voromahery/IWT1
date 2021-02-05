@@ -263,6 +263,7 @@ main {
 
 .menu {
   background-image: url("../images/icon-hamburger.svg");
+  background-color: #FFFFFF;
   width: 24px; }
 
 .menu,
